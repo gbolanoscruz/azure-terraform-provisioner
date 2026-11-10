@@ -15,3 +15,11 @@ In global corporate environments, manual infrastructure provisioning creates sev
 1. Initialize the Terraform working directory:
    ```bash
    terraform init
+
+2. Review the execution plan:
+    ```bash
+   terraform plan -var="environment=dev"
+
+3. Apply the infrastructure:
+    ```bash
+   terraform apply -var="environment=dev" -auto-approve
